@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cutive+Mono&family=Zen+Tokyo+Zoo&display=swap');
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    white-space: nowrap;
+    animation: scroll-left 13s linear infinite;
+    font-size: 2.5rem;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

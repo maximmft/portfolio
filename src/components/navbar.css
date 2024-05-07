@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cutive+Mono&family=Zen+Tokyo+Zoo&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20%;
+    position: sticky;
+}
+
+.navbar-title{
+    font-family: cutive mono;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.navbar-title:hover{
+    opacity: 1;
+   
+}

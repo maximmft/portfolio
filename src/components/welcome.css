@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cutive+Mono&family=Zen+Tokyo+Zoo&display=swap");
+
+body {
+  background-color: #1a1a1a;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-job {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.name {
+  font-family: chakra petch;
+  font-weight: 100;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.job {
+  font-family: Cutive Mono;
+  font-weight: 100;
+  margin: 0.5rem 0;
+  text-align: start;
+}
+
+.welcome-title {
+  color: white;
+  font-family: Zen Tokyo Zoo;
+  font-weight: normal;
+  font-size: 10rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 25%;
+  margin-bottom: 30%;
+}
+
+.welcome-title.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

@@ -1,0 +1,6 @@
+.border{
+    border: 2px solide white;
+    box-shadow: 0px 0px 32px -6px rgb(255, 247, 236); 
+    margin: 1rem 4rem 0.5rem 4rem;
+    padding-left: 2%;
+}
