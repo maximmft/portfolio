@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    cursor: pointer;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .scrolling-text-container {
@@ -15,7 +18,7 @@
     margin-top: 20%;
     margin-bottom: 10%;
     white-space: nowrap;
-    animation: scroll-left 13s linear infinite;
+    animation: scroll-left 20s linear infinite;
     font-size: 2.5rem;
   }
   

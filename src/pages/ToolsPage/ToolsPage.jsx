@@ -1,12 +1,28 @@
 import "./ToolsPage.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+import { appear } from "../../variants";
 
 function ToolsPage() {
   return (
     <>
-      <p>Tools</p>
-      <h1>What do I use?</h1>
+      <motion.p variants={appear(0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}>
+        Tools</motion.p>
+      <motion.h1
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}>What do I use?</motion.h1>
       <div className="tools">
-        <div className="backend">
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="backend">
           <h2>Software Development</h2>
           <p>
             Proficient in Java, SQL, and noSQL databases.
@@ -14,8 +30,13 @@ function ToolsPage() {
             <br></br> API development using Express and React.js. <br></br>
             <br></br>Skilled in Node.js, Git, and Git Bash for version control.
           </p>
-        </div>
-        <div className="frontend">
+        </motion.div>
+        <motion.div 
+         variants={fadeIn("left", 0.2)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{ once: false, amount: 0.7 }}
+         className="frontend">
           <h2>Frontend Dev React</h2>
           <p>
             Expertise in HTML, CSS, and JavaScript enables me to craft intuitive
@@ -25,7 +46,7 @@ function ToolsPage() {
             <br></br>Skilled in developing hybrid mobile apps and cross-platform
             solutions
           </p>
-        </div>
+        </motion.div>
       </div>
     </>
   );

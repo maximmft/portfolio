@@ -20,3 +20,11 @@
     opacity: 1;
    
 }
+
+@media (max-width: 500px) {
+    .navbar{
+        margin: 0;
+    }
+    
+  
+  }

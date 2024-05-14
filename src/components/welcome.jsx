@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./welcome.css";
 
 function Welcome() {
-  const letters = ["W", "e", "l", "c", "o", "m", "e","."];
+  const letters = ["P", "o", "r", "t", "f", "o", "l","i","o"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => prevIndex + 1);
-    }, 300);
+    }, 200);
 
     return () => clearInterval(intervalId);
   }, []);

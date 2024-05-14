@@ -42,5 +42,24 @@ body {
 
 .welcome-title.visible {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .welcome-title {
+    font-size: 4rem;
+    
+  }
+
+  .name{
+    font-size: 1rem;
+    width: 8rem;
+  }
+
+  .job{
+    font-size: 14px;
+    margin: 0 0 0 2px;
+  }
+  
+
 }

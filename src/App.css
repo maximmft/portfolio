@@ -1,6 +1,36 @@
-.border{
-    border: 2px solide white;
-    box-shadow: 0px 0px 32px -6px rgb(255, 247, 236); 
-    margin: 1rem 4rem 0.5rem 4rem;
-    padding-left: 2%;
+.border {
+  border: 2px solide white;
+  box-shadow: 0px 0px 32px -6px rgb(255, 247, 236);
+  margin: 1rem 4rem 0.5rem 4rem;
+  padding-left: 2%;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.border:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(blue 10%, orange 50%, rgb(255, 2, 145) 100%);
+  filter: blur(20px);
+}
+
+.border:after {
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+}
+
+@media (max-width: 500px) {
+  .border {
+    margin: 1rem;
+  }
 }

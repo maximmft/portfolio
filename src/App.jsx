@@ -18,7 +18,6 @@ function App() {
         <ToolsPage/>
         <ProjectsPage/>
         <ContactPage/>
-        <Outlet />
       </div>
     </>
   );
