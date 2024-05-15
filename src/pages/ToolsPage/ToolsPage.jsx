@@ -18,16 +18,16 @@ function ToolsPage() {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.8 }}
       >
         What do I use?
       </motion.h1>
       <div className="tools">
-        {/* <motion.div
+        <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.8 }}
           className="backend"
         >
           <h2 className="tool-title" >Software Development</h2>
@@ -37,16 +37,7 @@ function ToolsPage() {
             <br></br> API development using Express and React.js. <br></br>
             <br></br>Skilled in Node.js, Git, and Git Bash for version control.
           </p>
-        </motion.div> */}
-         <div className="backend">
-          <h2 className="tool-title" >Software Development</h2>
-          <p className="tool-paragraph">
-            Proficient in Java, SQL, and noSQL databases.
-            <br></br>
-            <br></br> API development using Express and React.js. <br></br>
-            <br></br>Skilled in Node.js, Git, and Git Bash for version control.
-          </p>
-        </div>
+        </motion.div>
         <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
