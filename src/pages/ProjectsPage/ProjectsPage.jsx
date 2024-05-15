@@ -70,7 +70,7 @@ function ProjectsPage() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className="project-title"
-            onClick={() => navigateToURL("https://brainbox-five.vercel.app/")}
+            onClick={() => navigateToURL("https://rick-and-morty-dml0hw04a-maximmfts-projects.vercel.app/")}
           >
             Rick and Morty
           </motion.h2>
