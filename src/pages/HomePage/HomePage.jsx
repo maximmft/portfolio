@@ -15,14 +15,9 @@ function HomePage() {
         <div className="presentation-title-paragraph">
           <h1 className="presentation-title">Welcome to my portfolio !</h1>
           <AnimatedTextWord
-            text="I'm Maxime, a web developer with a rather unconventional journey. After
-        three fulfilling years in the luxury hospitality industry, I made a
-        pivotal career transition. I dived headfirst into the realm of coding by
-        enrolling in the Wild Code School, where I completed an intensive
-        five-month bootcamp. 
-        I love minimal and graphic design. I enjoy exploring the world, whales,
-        Vietnamese food, and surreal art.
-        Explore my journey and projects here."
+            text="I'm Maxime, a web developer with a rather unconventional journey. After three fulfilling years in the luxury hospitality industry, I made a
+        pivotal career transition. I dived headfirst into the realm of coding by enrolling in the Wild Code School, where I completed an intensive five-month bootcamp. I love minimal and graphic design. I enjoy exploring the world, whales,
+        Vietnamese food, and surreal art. Explore my journey and projects here."
           />
         </div>
         <motion.img
