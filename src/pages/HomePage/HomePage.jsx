@@ -1,5 +1,6 @@
-import { appear, fadeIn } from "../../variants";
+import { appear, fadeIn, fadeInImage } from "../../variants";
 import { motion } from "framer-motion";
+import AnimatedTextWord from "../../components/AnimatedTextWord";
 import "./Home.css";
 import Maxime from "../../assets/photos/moi.jpg";
 import Vietnam from "../../assets/photos/vietnam.jpg";
@@ -8,44 +9,48 @@ import Whale from "../../assets/photos/whale.png";
 import Elephant from "../../assets/photos/Elephant.jpg";
 
 function HomePage() {
-  
-
   return (
     <>
       <section className="presentation">
         <div className="presentation-title-paragraph">
-          <h1 className="presentation-title">My universe </h1>
-          <motion.p className="presentation-paragraph">
-            Welcome to my portfolio! <br />
-            <br />
-            I'm Maxime, a web developer with a rather unconventional journey.
-            After three fulfilling years in the luxury hospitality industry, I
-            made a pivotal career transition. I dived headfirst into the realm
-            of coding by enrolling in the Wild Code School, where I completed an
-            intensive five-month bootcamp. <br />
-            <br />
-            Since then, every line of code I write is infused with my passion
-            for creation and my commitment to delivering innovative and
-            user-friendly web solutions.
-            <br />
-            <br />
-            I love minimal and graphic design. I enjoy exploring the world,
-            whales, Vietnamese food, and surreal art.
-            <br />
-            <br />
-            Explore my journey and projects here.
-          </motion.p>
+          <h1 className="presentation-title">Welcome to my portfolio !</h1>
+          <AnimatedTextWord
+            text="I'm Maxime, a web developer with a rather unconventional journey. After
+        three fulfilling years in the luxury hospitality industry, I made a
+        pivotal career transition. I dived headfirst into the realm of coding by
+        enrolling in the Wild Code School, where I completed an intensive
+        five-month bootcamp. 
+        I love minimal and graphic design. I enjoy exploring the world, whales,
+        Vietnamese food, and surreal art.
+        Explore my journey and projects here."
+          />
         </div>
-        <img className="maxime" src={Maxime} alt="Maxime" />
-        <img className="vietnam" src={Vietnam} alt="Vietnam" />
+        <motion.img
+          className="maxime"
+          src={Maxime}
+          alt="Maxime"
+          variants={fadeInImage("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        />
+        <motion.img
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+          className="vietnam"
+          src={Vietnam}
+          alt="Vietnam"
+        />
       </section>
       <motion.p
-        variants={appear(0.2)}
+        variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
       >
-        Inspirations I like{" "}
+        Inspirations{" "}
       </motion.p>
       <br />
       <br />
@@ -81,7 +86,7 @@ function HomePage() {
             />
           </div>
         </div>
-        <div className="art">
+        <div className={`art ${"art-mobile"}`}>
           <div className="image">
             <motion.img
               variants={appear(0.2)}
@@ -121,7 +126,7 @@ function HomePage() {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              Souvenir
+              Photography
             </motion.figcaption>
             <motion.h3
               variants={fadeIn("up", 0.2)}

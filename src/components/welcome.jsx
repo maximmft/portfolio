@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { appear, fadeIn, fadeInImage } from "../variants";
+import {motion} from "framer-motion"
 import "./welcome.css";
 
 function Welcome() {
-  const letters = ["P", "o", "r", "t", "f", "o", "l","i","o"];
+  const letters = ["P", "o", "r", "t", "f", "o", "l", "i", "o"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -16,8 +18,15 @@ function Welcome() {
   return (
     <div className="welcome-section">
       <div className="name-job">
-        <h1 className="name">Maxime Maufront</h1>
-        <h2 className="job">Web developer</h2>
+        <motion.h1 variants={appear(0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }} className="name">Maxime Maufront</motion.h1>
+        <motion.h2 variants={appear(0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="job">Web developer</motion.h2>
       </div>
       {letters.map((letter, index) => (
         <h1
@@ -27,7 +36,7 @@ function Welcome() {
           {letter}
         </h1>
       ))}
-       </div>
+    </div>
   );
 }
 

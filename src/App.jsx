@@ -11,7 +11,6 @@ import ToolsPage from "./pages/ToolsPage/ToolsPage";
 function App() {
   return (
     <>
-      <Navbar />
       <div className="border">
         <WelcomePage />
         <HomePage/>

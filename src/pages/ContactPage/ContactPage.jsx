@@ -29,17 +29,22 @@ function ContactPage() {
         variants={fadeIn("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }} onClick={() => navigateToURL("https://github.com/maximmft")}>Github</motion.h2>
-        <motion.h2 
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }} onClick={sendEmail}>Mail</motion.h2>
+        viewport={{ once: false, amount: 0.7 }} 
+        className="contact-h2" onClick={() => navigateToURL("https://github.com/maximmft")}>Github</motion.h2>
         <motion.h2 
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }} onClick={() => navigateToURL("https://www.linkedin.com/in/maxime-maufront-2b8850194/")}>Linkedin</motion.h2>
+        viewport={{ once: false, amount: 0.7 }} 
+        className="contact-h2" 
+        onClick={sendEmail}>Mail</motion.h2>
+        <motion.h2 
+        variants={fadeIn("up", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }} 
+        className="contact-h2" 
+        onClick={() => navigateToURL("https://www.linkedin.com/in/maxime-maufront-2b8850194/")}>Linkedin</motion.h2>
       </div>
     </>
   );

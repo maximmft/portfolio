@@ -3,6 +3,7 @@ export const fadeIn = (direction, delay) => {
         hidden:{
             y: direction === 'up' ? 75 : direction === 'down' ? -75 : 0,
             x: direction === 'left' ? 150 : direction === 'right' ? -150 : 0,
+            opacity: 0,
         },
         show:{
             y: 0,
@@ -11,6 +12,27 @@ export const fadeIn = (direction, delay) => {
             transition: {
                 type: 'tween',
                 duration: 0.5,
+                delay: delay,
+                ease: [0.25, 0.25, 0.25, 0.75],
+            }
+        }
+    }
+}
+
+export const fadeInImage = (direction, delay) => {
+    return{
+        hidden:{
+            y: direction === 'up' ? 75 : direction === 'down' ? -75 : 0,
+            x: direction === 'left' ? 150 : direction === 'right' ? -150 : 0,
+            opacity: 0,
+        },
+        show:{
+            y: 0,
+            x: 0,
+            opacity: 1,
+            transition: {
+                type: 'linear',
+                duration: 0.2,
                 delay: delay,
                 ease: [0.25, 0.25, 0.25, 0.75],
             }
