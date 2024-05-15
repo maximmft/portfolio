@@ -18,7 +18,7 @@ function ToolsPage() {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.5 }}
       >
         What do I use?
       </motion.h1>
@@ -27,7 +27,7 @@ function ToolsPage() {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.5 }}
           className="backend"
         >
           <h2 className="tool-title" >Software Development</h2>
