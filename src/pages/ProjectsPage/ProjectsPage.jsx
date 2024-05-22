@@ -21,7 +21,7 @@ function ProjectsPage() {
       <div className="projects">
         <div className="project1">
           <motion.h2
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -45,7 +45,7 @@ function ProjectsPage() {
         </div>
         <div className="project2">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -65,7 +65,7 @@ function ProjectsPage() {
         </div>
         <div className="project3">
         <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
