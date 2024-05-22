@@ -32,7 +32,7 @@ function ToolsPage() {
         >
           <h2 className="tool-title" >Software Development</h2>
           <p className="tool-paragraph">
-            Proficient in Java, SQL, and noSQL databases.
+            Proficient in SQL databases.
             <br></br>
             <br></br> API development using Express and React.js. <br></br>
             <br></br>Skilled in Node.js, Git, and Git Bash for version control.
