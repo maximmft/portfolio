@@ -71,6 +71,8 @@ body {
   transition: opacity 0.5s ease-in-out;
   margin-top: 25%;
   margin-bottom: 30%;
+  text-shadow:  4px 5px #453970
+
 }
 
 .welcome-title.visible {
@@ -87,6 +89,7 @@ body {
   transition: opacity 0.5s ease-in-out;
   margin-top: 25%;
   margin-bottom: 30%;
+  text-shadow:  4px 5px #aaaaaa
 }
 
 @media (max-width: 500px) {
