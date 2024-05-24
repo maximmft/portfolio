@@ -66,11 +66,11 @@ background-color: black;
 @media (max-width: 500px) {
   .dark {
     margin: 0 1rem;
-    width: 100%;
+    width: 100vh;
   }
 
   .light {
     margin: 0 1rem;
-    width: 100%;
+    width: 100vh;
   }
 }
