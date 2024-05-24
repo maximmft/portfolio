@@ -32,7 +32,7 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"]:checked{
-    border: 2px solid rgb(58, 58, 58);
+    border: 2px solid rgb(10, 10, 10);
 }
 
 .navbar-title:hover {
