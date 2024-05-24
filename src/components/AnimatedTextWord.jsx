@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "../context/theme";
 
 const AnimatedTextWord = ({ text }) => {
   const words = text.split(" ");
+  const {theme} = useTheme();
 
   const container = {
     hidden: { opacity: 0 },
@@ -40,7 +42,7 @@ const AnimatedTextWord = ({ text }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="presentation-paragraph"
+      className={theme === "dark" ? "presentation-paragraph" : "presentation-paragraph-light"}
     >
       {words.map((word, index) => (
         <motion.span

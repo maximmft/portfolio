@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import ToolsPage from "./pages/ToolsPage/ToolsPage";
+import { ThemeProvider } from "./context/theme";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,6 @@ const router = createBrowserRouter([
       { path: "/projects", element: <ProjectsPage /> },
       { path: "/tools", element: <ToolsPage /> },
       { path: "/contact", element: <ContactPage /> },
-   
     ],
   },
 ]);
@@ -27,6 +27,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );

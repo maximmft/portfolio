@@ -1,4 +1,5 @@
 import { appear, fadeIn } from "../../variants";
+import { useTheme } from "../../context/theme";
 import { motion } from "framer-motion";
 import "./ProjectsPage.css";
 
@@ -7,6 +8,8 @@ function ProjectsPage() {
     window.open(url, "_blank");
   };
 
+  const {theme} = useTheme();
+
   return (
     <>
       <motion.p
@@ -14,7 +17,7 @@ function ProjectsPage() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="project-section-start"
+        className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
       >
         Projects
       </motion.p>
@@ -25,7 +28,8 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="project-title"
+            className={theme === "dark" ? "project-title" : "project-title-light"}
+
             onClick={() =>
               navigateToURL(
                 "https://maximmft.github.io/Les-recettes-Wild/recipe_wrap.html"
@@ -39,6 +43,8 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+
           >
             1st project // March 2024
           </motion.p>
@@ -49,7 +55,7 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="project-title"
+            className={theme === "dark" ? "project-title" : "project-title-light"}
             onClick={() => navigateToURL("https://brainbox-five.vercel.app/")}
           >
             Brain Box
@@ -59,6 +65,8 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+
           >
             2nd project // April 2024
           </motion.p>
@@ -69,8 +77,8 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="project-title"
-            onClick={() => navigateToURL("https://rick-and-morty-dml0hw04a-maximmfts-projects.vercel.app/")}
+            className={theme === "dark" ? "project-title" : "project-title-light"}
+            onClick={() => navigateToURL("https://rick-and-morty-orcin-two.vercel.app/")}
           >
             Rick and Morty
           </motion.h2>
@@ -79,6 +87,8 @@ function ProjectsPage() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+
           >
             Project // May 2024
           </motion.p>

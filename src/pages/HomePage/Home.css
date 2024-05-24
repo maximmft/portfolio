@@ -12,6 +12,12 @@
   font-weight: 100;
 }
 
+.presentation-title-light{
+  color: rgb(0, 0, 0);
+  font-family: chakra petch;
+  font-weight: 100;
+}
+
 .presentation-title-paragraph {
   display: flex;
   flex-direction: column;
@@ -22,6 +28,13 @@
 .presentation-paragraph {
   color: white;
   font-family: cutive mono;
+  font-weight: 100;
+}
+
+.presentation-paragraph-light {
+  color: black;
+  font-family: cutive mono;
+  font-weight: bold;
 }
 
 .maxime {
@@ -35,9 +48,26 @@
   border-radius: 10px;
 }
 
+.maxime-light {
+  width: 12rem;
+  height: 17rem;
+  position: relative;
+  left: 3%;
+  top: 10rem;
+  z-index: 1;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  filter: grayscale();
+}
+
 .maxime:hover {
   transform: scale(1.1);
 }
+
+.maxime-light:hover{
+  filter: none;
+  transition:  0.8s ease-in-out;
+  }
 
 .vietnam {
   width: 20%;
@@ -48,6 +78,24 @@
   z-index: 0;
   transition: transform 0.2s ease-in-out;
   border-radius: 10px;
+}
+
+.vietnam-light {
+  width: 20%;
+  height: 10%;
+  position: relative;
+  right: 5%;
+  bottom: 0;
+  z-index: 0;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  filter: grayscale();
+}
+
+.vietnam-light:hover{
+  filter: none;
+  transition: 0.8s ease-in-out;
+
 }
 
 .vietnam:hover {
@@ -83,7 +131,7 @@
   filter: grayscale();
   object-fit: cover;
   margin-bottom: 3rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .whale {
@@ -92,7 +140,7 @@
   filter: grayscale();
   object-fit: cover;
   margin-bottom: 3rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .elephant {
@@ -100,25 +148,25 @@
   width: 100%;
   filter: grayscale();
   object-fit: cover;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .surreal:hover {
   filter: none;
   transform: scale(1.1);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.8s;
 }
 
 .whale:hover {
   filter: none;
   transform: scale(1.1);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.8s;
 }
 
 .elephant:hover {
   filter: none;
   transform: scale(1.05);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.8s;
 }
 
 .art {
@@ -138,6 +186,20 @@ h3 {
   font-family: cutive mono;
   font-weight: 100;
   margin: 0;
+}
+
+.inspiration-paragraph-light{
+  color: black;
+  font-weight: bold;
+}
+
+.figcaption-light{
+  color: black;
+  font-weight: 500;
+}
+
+.h3-light{
+  color: black;
 }
 
 @media (max-width: 500px) {

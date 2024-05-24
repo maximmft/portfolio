@@ -1,13 +1,24 @@
-.border {
+.dark {
   border: 2px solid white;
   box-shadow: 0px 0px 32px -6px rgb(255, 247, 236);
-  margin: 4rem 4rem 0.5rem 4rem;
+  margin: 0.5rem 4rem 0.5rem 4rem;
   padding-left: 2%;
   position: relative;
   background: #1a1a1a;
+  color: white;
 }
 
-.border:before {
+.light {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 12px -15px rgb(255, 247, 236);
+  margin: 0.5rem 4rem 0.5rem 4rem;
+  padding-left: 2%;
+  position: relative;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.dark:before {
   position: absolute;
   z-index: -1;
   content: "";
@@ -19,7 +30,7 @@
   filter: blur(20px);
 }
 
-.border:after {
+.dark:after {
   content: "";
   z-index: -1;
   top: 0;
@@ -28,6 +39,29 @@
   right: 0;
   background: inherit;
 }
+
+.light:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+background-color: black;
+  filter: blur(20px);
+}
+
+.light:after {
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+}
+
 
 @media (max-width: 500px) {
   .border {

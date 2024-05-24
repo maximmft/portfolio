@@ -1,43 +1,26 @@
-import { useNavigate } from "react-router-dom";
+import { useTheme } from '../context/theme';
 import "./navbar.css";
 
 function Navbar() {
-  const navigate = useNavigate();
+  const { theme, setTheme } = useTheme();
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
-    <div className="navbar">
-      <h2
-        className="navbar-title"
-        onClick={() => navigate("/home")}
-        onKeyDown={() => navigate("/home")}
-        role="presentation"
-      >
-        Home
-      </h2>
-      <h2
-        className="navbar-title"
-        onClick={() => navigate("/projects")}
-        onKeyDown={() => navigate("/projects")}
-        role="presentation"
-      >
-        Projects
-      </h2>
-      <h2
-        className="navbar-title"
-        onClick={() => navigate("/tools")}
-        onKeyDown={() => navigate("/tools")}
-        role="presentation"
-      >
-        Tools
-      </h2>
-      <h2
-        className="navbar-title"
-        onClick={() => navigate("/contact")}
-        onKeyDown={() => navigate("/contact")}
-        role="presentation"
-      >
-        Contact
-      </h2>
+    <div className={theme === "dark" ? "navbar" : "navbar-light"}>
+      <label className="switch">
+        <input 
+          type="checkbox"
+          onChange={toggleTheme} 
+        />
+        <span className="checkmark"></span>
+      </label>
+      {theme === "dark" ? (
+        <p className="theme-mode">Light</p>
+      ) : (
+        <p className="theme-mode-light">Dark</p>
+      )}
     </div>
   );
 }

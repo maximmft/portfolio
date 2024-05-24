@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { useTheme } from './context/theme';
 import "./App.css";
 import "./components/welcome.css";
 import HomePage from "./pages/HomePage/HomePage";
@@ -9,9 +9,13 @@ import Navbar from "./components/navbar";
 import ToolsPage from "./pages/ToolsPage/ToolsPage";
 
 function App() {
+
+  const {theme} = useTheme()
+
   return (
     <>
-      <div className="border">
+        <Navbar/>
+      <div className={theme}>
         <WelcomePage />
         <HomePage/>
         <ToolsPage/>
