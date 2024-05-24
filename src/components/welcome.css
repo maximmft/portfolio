@@ -98,12 +98,28 @@ body {
     
   }
 
+  .welcome-title-light {
+    font-size: 3rem;
+    
+  }
+
   .name{
     font-size: 1rem;
     width: 8rem;
   }
 
+  .name-light{
+    font-size: 1rem;
+    width: 8rem;
+  }
+
   .job{
+    font-size: 14px;
+    margin: 0 0 0 2px;
+  }
+
+  
+  .job-light{
     font-size: 14px;
     margin: 0 0 0 2px;
   }

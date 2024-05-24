@@ -64,8 +64,13 @@ background-color: black;
 
 
 @media (max-width: 500px) {
-  .border {
-    margin: 1rem;
+  .dark {
+    margin: 0 1rem;
+    width: 100%;
+  }
+
+  .light {
+    margin: 0 1rem;
     width: 100%;
   }
 }

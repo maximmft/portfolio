@@ -54,4 +54,8 @@ input[type="checkbox"]:checked{
   .navbar {
     margin: 0;
   }
+  .navbar-light {
+    margin: 0;
+  }
+
 }

@@ -207,6 +207,10 @@ h3 {
     font-size: 1.5rem;
   }
 
+  .presentation-title-light {
+    font-size: 1.5rem;
+  }
+
   .art {
     display: flex;
     flex-direction: column;
@@ -223,7 +227,15 @@ h3 {
     font-size: 1rem;
   }
 
+  .h3-light {
+    font-size: 1rem;
+  }
+
   figcaption {
+    font-size: 1.5rem;
+  }
+
+  .figcaption-light {
     font-size: 1.5rem;
   }
 
@@ -237,6 +249,16 @@ h3 {
     display: none;
   }
 
+  .maxime-light {
+    width: 1rem;
+    display: none;
+  }
+
+  .vietnam-light {
+    width: 1rem;
+    display: none;
+  }
+
   .image {
     width: 100%;
     height: auto;
@@ -245,6 +267,11 @@ h3 {
   .presentation-paragraph {
     font-size: 1rem;
   }
+
+  .presentation-paragraph-light {
+    font-size: 1rem;
+  }
+
   .presentation-title-paragraph {
     width: 95%;
     display: flex;

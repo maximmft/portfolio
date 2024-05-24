@@ -75,6 +75,11 @@
     margin: 0;
   }
 
+  .project-title-light {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
   p {
     font-size: 0.8rem;
   }
