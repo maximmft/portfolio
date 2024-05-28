@@ -92,6 +92,50 @@ function ProjectsPage() {
           >
             Project // May 2024
           </motion.p>
+          </div>
+          <div className="project4">
+          <motion.h2
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "project-title" : "project-title-light"}
+            onClick={() => navigateToURL("https://rigol-app-maximmfts-projects.vercel.app/")}
+          >
+            Rigol'App
+          </motion.h2>
+          <motion.p
+            variants={appear(0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+
+          >
+            1 day Hackathon // May 2024
+          </motion.p>
+        </div>
+        <div className="project5">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "project-title" : "project-title-light"}
+            onClick={() => navigateToURL("https://portfolio-maxime-maufront.vercel.app/")}
+          >
+            Portfolio
+          </motion.h2>
+          <motion.p
+            variants={appear(0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+
+          >
+          Portfolio // May 2024
+          </motion.p>
         </div>
       </div>
     </>

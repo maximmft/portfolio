@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .project1 .project2 .project3 {
@@ -29,6 +30,15 @@
   margin-right: 5%;
 }
 
+.project4 {
+  margin-right: 20%;
+}
+
+.project5 {
+  margin-right: 8%;
+  margin-top: 10%;
+}
+
 .project-title {
   font-size: 2.5rem;
   margin-bottom: 0;
@@ -46,7 +56,7 @@
 
 .project-title-light:hover {
   text-shadow: 0px 1px 11px #000000;
-    transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .project1 .project-title:hover {
@@ -63,11 +73,22 @@
   transition: ease-in-out 0.3s;
 }
 
+.project4 .project-title:hover {
+  text-shadow: 0px 1px 11px #eeff00;
+  transition: ease-in-out 0.3s;
+}
+
+.project5 .project-title:hover {
+  text-shadow: 0px 1px 11px #ff0000;
+  transition: ease-in-out 0.3s;
+}
+
 @media (max-width: 500px) {
   .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .project-title {
@@ -85,13 +106,22 @@
   }
 
   .project1 {
-    margin:1.5rem 0 0 0;  
+    margin: 1.5rem 0 0 0;
   }
-  
-  .project2 {
-    margin:1.5rem 0 0 0;  }
-  
-  .project3 {
-    margin:1.5rem 0 0 0;  }
 
+  .project2 {
+    margin: 1.5rem 0 0 0;
   }
+
+  .project3 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .project4 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .project5 {
+    margin: 1.5rem 0 0 0;
+  }
+}
