@@ -89,6 +89,7 @@
   height: 6px;
   transform-origin: 0%;
   z-index: 999;
+  opacity: 0.9;
 }
 
 @media (max-width: 500px) {
