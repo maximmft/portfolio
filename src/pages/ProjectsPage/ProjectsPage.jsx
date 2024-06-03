@@ -32,7 +32,7 @@ function ProjectsPage() {
 
             onClick={() =>
               navigateToURL(
-                "https://maximmft.github.io/Les-recettes-Wild/recipe_wrap.html"
+                "https://maximmft.github.io/Les-recettes-Wild/index.html"
               )
             }
           >

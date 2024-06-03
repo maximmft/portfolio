@@ -48,7 +48,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-background-color: black;
+  background-color: black;
   filter: blur(20px);
 }
 
@@ -62,6 +62,33 @@ background-color: black;
   background: inherit;
 }
 
+.progess-scrollbar {
+  position: fixed;
+  background: linear-gradient(
+    45deg,
+    rgb(8, 8, 141),
+    rgb(115, 11, 149),
+    rgb(125, 84, 6),
+    rgb(156, 25, 64)
+  );
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  transform-origin: 0%;
+  z-index: 999;
+}
+
+.progess-scrollbar-light {
+  position: fixed;
+  background-color: #1a1a1a;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  transform-origin: 0%;
+  z-index: 999;
+}
 
 @media (max-width: 500px) {
   .dark {
