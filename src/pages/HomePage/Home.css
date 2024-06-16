@@ -191,6 +191,23 @@ h3 {
 .inspiration-paragraph-light{
   color: black;
   font-weight: bold;
+  text-align: center;
+}
+
+.inspiration-paragraph-light-tools{
+  color: black;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.inspiration-paragraph-tools{
+  color: white;
+  font-style: italic;
+  margin-top: 0;
+  font-size: 2vh;
+  text-align: center;
 }
 
 .figcaption-light{

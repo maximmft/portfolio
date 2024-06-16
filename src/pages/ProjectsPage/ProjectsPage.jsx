@@ -46,7 +46,7 @@ function ProjectsPage() {
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
 
           >
-            1st project // March 2024
+            1st project // March 2024 // HTML CSS
           </motion.p>
         </div>
         <div className="project2">
@@ -68,7 +68,7 @@ function ProjectsPage() {
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
 
           >
-            2nd project // April 2024
+            2nd project // April 2024 // React.js
           </motion.p>
         </div>
         <div className="project3">
@@ -90,7 +90,7 @@ function ProjectsPage() {
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
 
           >
-            Project // May 2024
+            Project // May 2024 // React.js
           </motion.p>
           </div>
           <div className="project4">
@@ -122,9 +122,8 @@ function ProjectsPage() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className={theme === "dark" ? "project-title" : "project-title-light"}
-            onClick={() => navigateToURL("https://portfolio-maxime-maufront.vercel.app/")}
           >
-            Portfolio
+            Gems
           </motion.h2>
           <motion.p
             variants={appear(0.2)}
@@ -134,7 +133,17 @@ function ProjectsPage() {
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
 
           >
-          Portfolio // May 2024
+          In progress // June 2024
+          </motion.p>
+          <motion.p
+            variants={appear(0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className={theme === "dark" ? "inspiration-paragraph-tools" : "inspiration-paragraph-light-tools"}
+
+          >
+          First full stack project in React.js & Express
           </motion.p>
         </div>
       </div>
