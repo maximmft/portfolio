@@ -131,9 +131,11 @@ function ProjectsPage() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
+            onClick={() => navigateToURL("https://gems-gems.fr/")}
+
 
           >
-          In progress // June 2024
+          Project // June 2024 // React.js & Node.js
           </motion.p>
           <motion.p
             variants={appear(0.2)}
