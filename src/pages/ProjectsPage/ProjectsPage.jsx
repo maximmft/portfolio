@@ -122,6 +122,7 @@ function ProjectsPage() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className={theme === "dark" ? "project-title" : "project-title-light"}
+            onClick={() => navigateToURL("https://gems-gems.fr/")}
           >
             Gems
           </motion.h2>
@@ -131,7 +132,6 @@ function ProjectsPage() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className={theme === "dark" ? "inspiration-paragraph" : "inspiration-paragraph-light"}
-            onClick={() => navigateToURL("https://gems-gems.fr/")}
 
 
           >
